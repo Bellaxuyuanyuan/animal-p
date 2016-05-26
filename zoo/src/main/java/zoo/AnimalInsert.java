@@ -11,6 +11,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
+import org.slf4j.LoggerFactory;
 
 /**
  *
@@ -18,6 +19,7 @@ import javax.swing.JOptionPane;
  * @see javax.swing.JFrame
  */
 public class AnimalInsert extends javax.swing.JFrame {
+    private static org.slf4j.Logger logger = LoggerFactory.getLogger(AnimalInsert.class);
 
     /**
      * An class that initialized components Creates new form InsertAnimal.
@@ -196,6 +198,7 @@ public class AnimalInsert extends javax.swing.JFrame {
      */
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         setVisible(false);// TODO add your handling code here:
+        logger.info("close window");
     }//GEN-LAST:event_jButton3ActionPerformed
     /**
      * Rewrite input letter.
@@ -237,7 +240,8 @@ public class AnimalInsert extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Record Inserted");
 
         } catch (SQLException ex) {
-            JOptionPane.showMessageDialog(null, ex);
+logger.debug("debug message");
+
     }//GEN-LAST:event_jButton1ActionPerformed
     }
 

@@ -13,6 +13,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import org.slf4j.LoggerFactory;
 
 /**
  *
@@ -20,6 +21,8 @@ import javax.swing.JOptionPane;
  * @see javax.swing.JFrame
  */
 public class AnimalDelete extends javax.swing.JFrame {
+
+    private static org.slf4j.Logger logger = LoggerFactory.getLogger(AnimalDelete.class);
 
     /**
      * An class that initialized components Creates new form DeleteAnimal.
@@ -162,13 +165,13 @@ public class AnimalDelete extends javax.swing.JFrame {
      * @param evt the action event of this button
      */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-
+        
         String c = jTextField1.getText();
-
+        
         try {
             Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@db.inf.unideb.hu:1521:ora11g", "ENG_RHXBN6", "xuyuanyuan");
             Statement stmt = conn.createStatement();
-
+            
             int confir = JOptionPane.showConfirmDialog(this, "Do you want to delete ?");
             if (confir == JOptionPane.YES_OPTION) {
                 String sql = "delete from ANIMAL where  (ANIMAL_CODE = '" + c + "') ";
@@ -176,9 +179,13 @@ public class AnimalDelete extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "Record has been deleted");
                 stmt.close();
                 conn.close();
+                
+                logger.info("delete successful");
             }
         } catch (SQLException ex) {
-            Logger.getLogger(AnimalUpdate.class.getName()).log(Level.SEVERE, null, ex);
+            
+            logger.debug("debug message");
+            
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 

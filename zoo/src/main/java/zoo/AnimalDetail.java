@@ -13,6 +13,7 @@ import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.table.DefaultTableModel;
+import org.slf4j.LoggerFactory;
 
 /**
  *
@@ -20,6 +21,8 @@ import javax.swing.table.DefaultTableModel;
  * @see javax.swing.JFrame
  */
 public class AnimalDetail extends javax.swing.JFrame {
+
+    private static org.slf4j.Logger logger = LoggerFactory.getLogger(AnimalDetail.class);
 
     /**
      * Creates new form AnimalDetail Shows table of animal details. This link
@@ -35,7 +38,7 @@ public class AnimalDetail extends javax.swing.JFrame {
 
         try {
 
-           // DriverManager.registerDriver(new oracle.jdbc.OracleDriver());
+            // DriverManager.registerDriver(new oracle.jdbc.OracleDriver());
             Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@db.inf.unideb.hu:1521:ora11g", "ENG_RHXBN6", "xuyuanyuan");
             Statement stmt = conn.createStatement();
 
@@ -46,13 +49,15 @@ public class AnimalDetail extends javax.swing.JFrame {
             while (re.next()) {
                 tmodel.addRow(new Object[]{re.getString("ANIMAL_CODE"), re.getString("ANIMAL_NAME"), re.getString("COUNTRY"), re.getString("FOOD"), re.getInt("Age")});
             }
+            logger.info("add row to table");
 
             re.close();
             stmt.close();
             conn.close();
 
         } catch (SQLException ex) {
-            Logger.getLogger(AnimalSearch.class.getName()).log(Level.SEVERE, null, ex);
+
+            logger.error("error message");
         }
     }
 
