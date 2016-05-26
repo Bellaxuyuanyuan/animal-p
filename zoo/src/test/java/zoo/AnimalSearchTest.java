@@ -22,7 +22,6 @@ import org.slf4j.LoggerFactory;
  */
 public class AnimalSearchTest {
 
-    private static Logger logger = LoggerFactory.getLogger(AnimalDetailTest.class);
 
     public AnimalSearchTest() {
     }
@@ -53,7 +52,6 @@ public class AnimalSearchTest {
     @Test
     public void testAnimalSearch() {
 
-        logger.info("This is an INFO message:show details");
 
         JTextField in1 = new JTextField();
         String a1 = in1.getText();

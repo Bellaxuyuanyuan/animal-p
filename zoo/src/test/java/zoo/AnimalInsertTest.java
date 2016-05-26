@@ -21,7 +21,6 @@ import org.slf4j.LoggerFactory;
  */
 public class AnimalInsertTest {
 
-    private static Logger logger = LoggerFactory.getLogger(AnimalDetailTest.class);
 
     public AnimalInsertTest() {
     }
@@ -53,7 +52,6 @@ public class AnimalInsertTest {
 
     @Test
     public void testInsertAnimal() {
-        logger.error("Error!Error!Error message.");
 
         JTextField in1 = new JTextField();
         JTextField in2 = new JTextField();

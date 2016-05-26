@@ -21,7 +21,6 @@ import org.slf4j.LoggerFactory;
  */
 public class AnimalUpdateTest {
 
-    private static Logger logger = LoggerFactory.getLogger(AnimalDetailTest.class);
 
     public AnimalUpdateTest() {
     }
@@ -52,7 +51,6 @@ public class AnimalUpdateTest {
 
     @Test
     public void testAnimalUpdate() {
-        logger.info("This is an INFO message:show details");
 
         JTextField in1 = new JTextField(), in2 = new JTextField(), in3 = new JTextField(), in4 = new JTextField(), in5 = new JTextField();
 

@@ -21,7 +21,6 @@ import org.slf4j.LoggerFactory;
  */
 public class AnimalDeleteTest {
 
-    private static Logger logger = LoggerFactory.getLogger(AnimalDetailTest.class);
 
     @Test
     public void testMain() {
@@ -30,7 +29,6 @@ public class AnimalDeleteTest {
 
     @Test
     public void testInsertAnimal() {
-        logger.warn("Warning!Warning!Warning message");
 
         JTextField in1 = new JTextField();
         String a1 = in1.getText();

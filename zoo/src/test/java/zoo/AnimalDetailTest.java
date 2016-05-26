@@ -22,7 +22,6 @@ import org.slf4j.LoggerFactory;
  */
 public class AnimalDetailTest {
 
-    private static Logger logger = LoggerFactory.getLogger(AnimalDetailTest.class);
 
     public AnimalDetailTest() {
     }
@@ -53,7 +52,6 @@ public class AnimalDetailTest {
 
     @Test
     public void testAnimalDetail() {
-        logger.info("This is an INFO message:show details");
 
         JTable t = new JTable();
         assertFalse("not null", equals(null));
