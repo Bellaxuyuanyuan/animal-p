@@ -107,7 +107,7 @@
                         <configuration>
                             <archive>
                                 <manifest>
-                                    <mainClass>class name</mainClass>
+                                    <mainClass>zoo.Main</mainClass>
                                 </manifest>
                             </archive>
                             <descriptorRefs>
