@@ -25,9 +25,9 @@
         </license>
     </licenses>
     <scm>
-        <connection>scm:git:https://github.com/Bellaxuyuanyuan/Animal-management-System.git</connection>
-        <developerConnection>scm:git:https://github.com/Bellaxuyuanyuan/Animal-management-System.git</developerConnection>
-        <url>https://github.com/Bellaxuyuanyuan/Animal-management-System.git</url>
+        <connection>scm:git:https://github.com/Bellaxuyuanyuan/animal-p.git</connection>
+        <developerConnection>scm:git:https://github.com/Bellaxuyuanyuan/animal-p.git</developerConnection>
+        <url>https://github.com/Bellaxuyuanyuan/animal-p.git</url>
     </scm>
     
     
