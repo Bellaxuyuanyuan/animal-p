@@ -12,12 +12,10 @@ import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
-
 /**
- *
- * @author Administrator
- * @see javax.swing.JFrame
- */
+  * 
+  * Class for updating animal data by entering animal name.
+  */
 public class AnimalUpdate extends javax.swing.JFrame {
 
     /**An class that initialized components Creates new form UpdateAnimal.

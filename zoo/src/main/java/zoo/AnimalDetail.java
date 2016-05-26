@@ -16,10 +16,9 @@ import javax.swing.table.DefaultTableModel;
 import org.slf4j.LoggerFactory;
 
 /**
- *
- * @author Administrator
- * @see javax.swing.JFrame
- */
+  * 
+  *Class for showing animal data on table.
+  */
 public class AnimalDetail extends javax.swing.JFrame {
 
     private static org.slf4j.Logger logger = LoggerFactory.getLogger(AnimalDetail.class);

@@ -14,10 +14,9 @@ import javax.swing.JOptionPane;
 import org.slf4j.LoggerFactory;
 
 /**
- *
- * @author Administrator
- * @see javax.swing.JFrame
- */
+  * 
+  *Class for insert animal data by entering animal details.
+  */
 public class AnimalInsert extends javax.swing.JFrame {
     private static org.slf4j.Logger logger = LoggerFactory.getLogger(AnimalInsert.class);
 

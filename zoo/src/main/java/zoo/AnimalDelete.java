@@ -14,12 +14,10 @@ import java.util.logging.Logger;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import org.slf4j.LoggerFactory;
-
-/**
- *
- * @author Administrator
- * @see javax.swing.JFrame
- */
+ /**
+  * 
+  *Class for deleting animal data by entering animal code.
+  */
 public class AnimalDelete extends javax.swing.JFrame {
 
     private static org.slf4j.Logger logger = LoggerFactory.getLogger(AnimalDelete.class);
