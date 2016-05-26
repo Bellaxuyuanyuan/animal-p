@@ -8,12 +8,10 @@ package zoo;
 import java.awt.event.WindowEvent;
 import javax.swing.JOptionPane;
 import javax.swing.JPasswordField;
-
 /**
- *
- * @author Xu Yuanyuan
- * @see javax.swing.JFrame
- */
+  * 
+  *Class for login to system by correct username and password.
+  */
 public class Login extends javax.swing.JFrame {
 
     /**An class that initialized components Creates new form Login.

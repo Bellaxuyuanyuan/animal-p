@@ -14,12 +14,10 @@
  * limitations under the License.
  */
 package zoo;
-
 /**
- *
- * @author Administrator
- * @see javax.swing.JFrame
- */
+  * 
+  *Class for showing main window.
+  */
 public class Main extends javax.swing.JFrame {
 
     /**
